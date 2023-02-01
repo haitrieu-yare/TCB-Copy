@@ -158,15 +158,15 @@ li#login-btn:hover {
 }
 
 #banner-2-h1 {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
   font-size: 28px;
   font-weight: 300;
 }
 
 #banner-2-text {
-    width: 40rem;
-    margin: 1rem 0;
-    color: #616161;
+  width: 40rem;
+  margin: 1rem 0;
+  color: #616161;
 }
 
 .decoration-img-container {
