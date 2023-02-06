@@ -331,14 +331,12 @@ a#login-btn:hover {
 .main-offer-card > img {
   width: 100%;
   position: relative;
-  z-index: 0;
 }
 
 .offer-content {
   width: 100%;
   position: absolute;
   padding: 1.6rem 2.4rem;
-  z-index: 1;
   color: #fff;
 }
 
@@ -371,4 +369,31 @@ a#login-btn:hover {
 
 .font-weight-600 {
   font-weight: 600;
+}
+
+#customers-opinions {
+  height: 59.7rem;
+  background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46442_1_a37fd6aad5.jpg?w=1920&q=75");
+  background-size: cover;
+}
+
+#awards {
+  height: 47.5rem;
+  background-color: #fff;
+}
+
+#quick-access {
+  height: 49.24rem;
+  background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/bg_168335d0df.svg?w=1920&q=75");
+  background-size: cover;
+}
+
+#interests {
+  height: 28.7rem;
+  background-color: #f5f6f8;
+}
+
+footer {
+  height: 26.2rem;
+  background-color: #212121;
 }
