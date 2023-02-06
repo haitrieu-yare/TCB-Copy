@@ -375,11 +375,59 @@ a#login-btn:hover {
   height: 59.7rem;
   background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46442_1_a37fd6aad5.jpg?w=1920&q=75");
   background-size: cover;
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: #fff;
+  padding: 4.8rem 10.36rem;
+}
+
+.opinion-list {
+  margin: 3rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.opinion-card {
+  height: 42rem;
+  width: 42.2rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+.opinion-card > img {
+  height: 56.7%;
+  object-fit: cover;
+}
+
+.opinion-text {
+  height: 18.4rem;
+  padding: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.opinion-provider {
+  margin-top: 1.6rem;
+  font-weight: bold;
 }
 
 #awards {
   height: 47.5rem;
   background-color: #fff;
+  color: #000;
+  font-size: 2.8rem;
+  padding: 4.8rem 10.36rem;
+}
+
+#awards > img {
+  width: 100%;
 }
 
 #quick-access {
@@ -389,8 +437,43 @@ a#login-btn:hover {
 }
 
 #interests {
+  padding: 3.6rem 10.36rem;
   height: 28.7rem;
   background-color: #f5f6f8;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+#interest-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  height: 16rem;
+  margin: 2rem 0 0 0;
+}
+
+.interest {
+  position: relative;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.interest > img {
+  width: 100%;
+}
+
+.interest-description {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  margin: 0;
+  padding: 1.6rem 2.4rem;
+}
+
+.interest-description > p {
+  margin: 1rem 0 0 0;
+  padding: 0;
 }
 
 footer {
