@@ -21,7 +21,10 @@ body {
   font-family: "SF Pro Display", sans-serif;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
   text-decoration: none;
 }
@@ -278,9 +281,41 @@ a#login-btn:hover {
 }
 
 #latest-offers {
-  height: 56rem;
+  height: 63.2rem;
   padding: 3.6rem 10.4rem;
   background-color: #ffffff;
   font-size: 2.8rem;
   font-weight: 300;
+}
+
+#offer-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.main-offer-card {
+  width: 63.2rem;
+}
+
+.offer-card {
+  width: 31.6rem;
+}
+
+.main-offer-card,
+.offer-card {
+  margin-top: 1.2rem;
+  height: 50.6rem;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  border-radius: 1rem;
+  /* .main-offer-card has border-radius but .main-offer-card > img doesn't
+  Because of this, the img will try to overflow and override the border-radius.
+  Setting overflow:hidden to hide the overflow part of the image */
+  overflow: hidden;
+}
+
+.main-offer-card > img {
+  width: 100%;
 }
