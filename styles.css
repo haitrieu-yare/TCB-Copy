@@ -17,7 +17,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -80,9 +80,7 @@ a:active {
 }
 
 .part-one,
-.part-two,
-.part-three,
-.part-four {
+.part-two {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +142,7 @@ a:active {
   height: 5.6rem;
   width: 100%;
   color: #616161;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,9 +181,9 @@ a:active {
 }
 /* These properties create a red line transition under the word */
 
- #header-bottom-navbar > a {
+#header-bottom-navbar > a {
   cursor: pointer;
-} 
+}
 
 a#home-logo {
   margin-right: 5rem;
@@ -199,13 +197,13 @@ a#home-logo {
 a#login-btn {
   padding: 1.85rem 1.6rem 1.85rem 2rem;
   margin-left: 8rem;
-  color: #ffffff;
+  color: #fff;
   background-color: #ed1c24;
   font-weight: 600;
 }
 
 a#login-btn:hover {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -237,7 +235,7 @@ a#login-btn:hover {
   top: 10rem;
   left: 20rem;
   width: 65rem;
-  color: #ffffff;
+  color: #fff;
   font-size: 3.2rem;
   font-weight: 300;
 }
@@ -286,7 +284,7 @@ a#login-btn:hover {
 }
 
 #qr-code {
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 0.5rem;
   padding: 0 1.6rem;
   width: 30rem;
@@ -322,7 +320,7 @@ a#login-btn:hover {
 #latest-offers {
   height: 63.2rem;
   padding: 3.6rem 0;
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 2.8rem;
   font-weight: 300;
   max-width: 131.2rem;
@@ -356,9 +354,6 @@ a#login-btn:hover {
   flex-direction: column;
   object-fit: cover;
   border-radius: 1rem;
-  /* .main-offer-card has border-radius but .main-offer-card > img doesn't
-  Because of this, the img will try to overflow and override the border-radius.
-  Setting overflow:hidden to hide the overflow part of the image */
   overflow: hidden;
 }
 
@@ -469,7 +464,7 @@ a#login-btn:hover {
 
 .opinion-provider {
   margin-top: 1.6rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #awards {
@@ -493,7 +488,7 @@ a#login-btn:hover {
   margin: 0 auto;
   height: 49.24rem;
   padding: 3.6rem 10.36rem;
-  background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/bg_168335d0df.svg?w=1920&q=75");
+  background-image: url(https://d1kndcit1zrj97.cloudfront.net/uploads/bg_168335d0df.svg?w=1920&q=75);
   background-size: cover;
   font-size: 2.8rem;
   font-weight: 300;
@@ -642,3 +637,4 @@ hr {
 #bottom-footer > a:hover {
   text-decoration: underline;
 }
+
