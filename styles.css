@@ -53,12 +53,15 @@ a:active {
   position: fixed;
   z-index: 1;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #header-top-navbar {
   position: inherit;
+  max-width: 1920px;
+  margin: auto;
   top: 0;
-  margin: 0;
   padding: 1.2rem 10.36rem;
   height: 4.5rem;
   width: 100%;
@@ -134,8 +137,9 @@ a:active {
 
 #header-bottom-navbar {
   position: inherit;
+  max-width: 1920px;
+  margin: auto;
   top: 4.5rem;
-  margin: 0;
   padding: 0 10.36rem;
   height: 5.6rem;
   width: 100%;
@@ -144,6 +148,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 #header-bottom-navbar > a {
@@ -152,12 +157,35 @@ a:active {
   margin: 0;
 }
 
-#header-bottom-navbar > a:hover {
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-color: #ff0000;
+.header-bottom-navbar-clickable {
+  position: relative;
+  height: 100%;
+  padding: 0.6rem;
   cursor: pointer;
 }
+
+/* These properties create a red line transition under the word */
+.header-bottom-navbar-clickable:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.header-bottom-navbar-clickable::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 0.4rem;
+  width: 0;
+  visibility: hidden;
+  background-color: #ed1c24;
+  transition: all 0.3s ease;
+}
+/* These properties create a red line transition under the word */
+
+ #header-bottom-navbar > a {
+  cursor: pointer;
+} 
 
 a#home-logo {
   margin-right: 5rem;
@@ -186,9 +214,10 @@ a#login-btn:hover {
 }
 
 #main-banner {
-  margin-top: 10.1rem;
   position: relative;
   height: 28rem;
+  max-width: 1920px;
+  margin: 10.1rem auto 0 auto;
 }
 
 #main-banner-img {
@@ -219,6 +248,8 @@ a#login-btn:hover {
   display: flex;
   justify-content: center;
   background-color: #f5f6f8;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .decoration-img-container {
@@ -376,6 +407,8 @@ a#login-btn:hover {
 #customers-opinions-layout {
   position: relative;
   height: 59.7rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 #customers-opinions-background {
@@ -439,6 +472,8 @@ a#login-btn:hover {
 }
 
 #awards {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 47.5rem;
   background-color: #fff;
   color: #000;
@@ -452,10 +487,20 @@ a#login-btn:hover {
   width: 100%;
 }
 
-#quick-access {
+#quick-access-layout {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 49.24rem;
+  padding: 3.6rem 10.36rem;
   background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/bg_168335d0df.svg?w=1920&q=75");
   background-size: cover;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+#quick-access {
+  max-width: 131.2rem;
+  margin: 0 auto;
 }
 
 #interests-layout {
@@ -464,6 +509,8 @@ a#login-btn:hover {
   padding: 3.6rem 10.36rem;
   font-size: 2.8rem;
   font-weight: 300;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 #interests {
@@ -484,6 +531,12 @@ a#login-btn:hover {
   height: 100%;
   border-radius: 1rem;
   overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.interest:hover {
+  cursor: pointer;
+  box-shadow: 0 0.3rem 0.6rem #a2a2a2;
 }
 
 .interest > img {
@@ -512,6 +565,8 @@ a#login-btn:hover {
 }
 
 footer {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 26.2rem;
   background-color: #212121;
   padding: 3.2rem 10.36rem;
