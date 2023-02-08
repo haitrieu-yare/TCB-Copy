@@ -294,7 +294,7 @@ a#login-btn:hover {
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 #qr-code img {
@@ -355,6 +355,11 @@ a#login-btn:hover {
   object-fit: cover;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.main-offer-card:hover,
+.offer-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .main-offer-card > img {
@@ -448,12 +453,26 @@ a#login-btn:hover {
   color: #000;
   font-weight: 400;
   font-size: 1.6rem;
+  /* overflow: hidden; is for making upper corner rounded */ 
   overflow: hidden;
 }
 
-.opinion-card > img {
+.opinion-card-image-frame {
   height: 56.7%;
+  /* overflow: hidden; is for making image doesn't overflow the bottom border */ 
+  overflow: hidden;
+}
+
+.opinion-card > .opinion-card-image-frame > img {
+  /* width, height at 100% make the picture stay in the frame and not bigger than the frame */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.opinion-card > .opinion-card-image-frame > img:hover {
+  transform: scale(1.05);
 }
 
 .opinion-text {
@@ -637,4 +656,3 @@ hr {
 #bottom-footer > a:hover {
   text-decoration: underline;
 }
-
