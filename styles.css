@@ -531,6 +531,7 @@ a#login-btn:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3.1fr 4.8fr 3.8fr;
+  gap: 3rem;
   align-items: flex-start;
 }
 
@@ -665,10 +666,58 @@ td {
   color: #000;
 }
 
+#information-table-showmore > a:hover {
+  text-decoration: underline;
+}
+
 .show-more-icon-2 {
   height: 1.6rem;
   width: 1.6rem;
   margin-left: 1rem;
+}
+
+#article-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+article {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.8rem;
+  padding: 1.6rem 2rem;
+  border-radius: 1rem;
+}
+
+.article-image {
+  width: 6.2rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.article-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+
+.article-info > h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.article-info > p {
+  padding: 0;
+  margin: 0.8rem 0 0 0;
+  color: #616161;
 }
 
 #interests-layout {
